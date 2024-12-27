@@ -5,66 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bikes Showcase</title>
     <style>
-        /* General Body Styling */
+        /* Global Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #121212; /* Deep Black Background */
-            color: #e0e0e0; /* Light Gray Text for Contrast */
-            line-height: 1.6;
+            background-color: #000; /* Black background */
+            color: #eee; /* Light gray text for readability */
         }
 
-        /* Header Styling */
+        /* Header */
         header {
-            background: linear-gradient(90deg, #1f1f1f, #333333); /* Gradient Effect */
-            color: #f5f5f5; /* Soft White Text */
+            background: linear-gradient(135deg, #1a1a1a, #333);
+            color: #fff;
             padding: 1.5rem 0;
             text-align: center;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Subtle Shadow */
             font-size: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
         }
 
-        /* Navigation Menu */
+        /* Navigation */
         nav {
-            background-color: #1a1a1a;
+            background: linear-gradient(135deg, #222, #444);
             display: flex;
             justify-content: center;
-            border-bottom: 2px solid #333;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+            border-bottom: 1px solid #555;
         }
 
         nav a {
-            color: #9e9e9e;
+            color: #ddd;
             text-decoration: none;
-            padding: 1rem 2rem;
+            padding: 1rem 1.5rem;
             display: block;
             font-size: 1.1rem;
-            transition: color 0.3s, background-color 0.3s;
+            transition: all 0.3s ease;
         }
 
         nav a:hover {
-            background-color: #333;
-            color: #ffffff;
+            background-color: #555;
+            color: #fff;
+            border-radius: 5px;
         }
 
-        /* Section Styling */
+        /* Section Styles */
         section {
-            padding: 3rem 2rem;
+            padding: 2rem;
         }
 
         section h2 {
-            font-size: 2rem;
-            color: #f5f5f5;
+            font-size: 1.8rem;
+            color: #fff;
             margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text Shadow for Header */
+            border-bottom: 2px solid #444;
+            display: inline-block;
+            padding-bottom: 0.5rem;
         }
 
         section p {
-            color: #bdbdbd; /* Slightly Muted Text */
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #ccc;
         }
 
-        /* Gallery Styling */
+        /* Gallery Grid */
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -74,47 +77,40 @@
         .gallery img {
             width: 100%;
             border-radius: 8px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Stronger Shadow for Images */
-            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .gallery img:hover {
-            transform: scale(1.05); /* Zoom Effect */
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8);
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
         }
 
         .bike-info {
-            margin-top: 0.8rem;
+            margin-top: 0.5rem;
             font-size: 1rem;
-            color: #a0a0a0;
+            color: #bbb;
+            line-height: 1.5;
         }
 
-        /* Footer Styling */
+        /* Footer */
         footer {
             text-align: center;
             padding: 1.5rem;
-            background-color: #1a1a1a;
-            color: #9e9e9e;
-            border-top: 2px solid #333;
-            font-size: 0.9rem;
+            background: linear-gradient(135deg, #1a1a1a, #333);
+            color: #ddd;
+            font-size: 1rem;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.5);
         }
 
-        footer p:hover {
-            color: #ffffff; /* Footer Text Hover Effect */
+        footer p {
+            margin: 0;
         }
 
-        /* Responsive Styling */
+        /* Media Queries */
         @media (max-width: 600px) {
             nav {
                 flex-wrap: wrap;
-            }
-
-            nav a {
-                padding: 1rem;
-            }
-
-            section {
-                padding: 2rem 1rem;
             }
         }
     </style>
@@ -151,12 +147,54 @@
         </div>
     </section>
 
-    <!-- Road Bikes Section -->
-    <!-- Hybrid Bikes Section -->
-    <!-- Electric Bikes Section -->
+    <section id="road">
+        <h2>Road Bikes</h2>
+        <div class="gallery">
+            <div>
+                <img src="https://raw.githubusercontent.com/charan-2028/BikeHub.GITHUB.1OQ/23874dd5fe62fa8b9e7a70ed208c9edee315bdaf/r1.jpg" alt="Road Bike 1 View 1">
+                <img src="https://raw.githubusercontent.com/charan-2028/BikeHub.GITHUB.1OQ/23874dd5fe62fa8b9e7a70ed208c9edee315bdaf/r2.jpg" alt="Road Bike 1 View 2">
+                <img src="https://raw.githubusercontent.com/charan-2028/BikeHub.GITHUB.1OQ/23874dd5fe62fa8b9e7a70ed208c9edee315bdaf/r3.jpg" alt="Road Bike 1 View 3">
+                <p class="bike-info">
+                    The Royal Enfield Super Meteor 650 is a highly anticipated cruiser motorcycle from Royal Enfield, leveraging their renowned 650cc parallel-twin platform. With a classic cruiser design and advanced features, it’s a favorite for long-distance riders.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="hybrid">
+        <h2>Hybrid Bikes</h2>
+        <div class="gallery">
+            <div>
+                <img src="https://raw.githubusercontent.com/charan-2028/BikeHub.GITHUB.1OQ/0a2e5559331eeccc58b480b1890d1deaaa60fb72/cq5dam.thumbnail.600.600%20(1).png" alt="Hybrid Bike 1 View 1">
+                <img src="https://raw.githubusercontent.com/charan-2028/BikeHub.GITHUB.1OQ/0a2e5559331eeccc58b480b1890d1deaaa60fb72/cq5dam.thumbnail.600.600%20(2).png" alt="Hybrid Bike 1 View 2">
+                <img src="https://raw.githubusercontent.com/charan-2028/BikeHub.GITHUB.1OQ/0a2e5559331eeccc58b480b1890d1deaaa60fb72/cq5dam.thumbnail.600.600%20(2).png" alt="Hybrid Bike 1 View 3">
+                <p class="bike-info">
+                    The Kawasaki Ninja 7 Hybrid combines a parallel-twin engine with an electric motor, offering performance and eco-friendliness in a futuristic design.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="electric">
+        <h2>Electric Bikes</h2>
+        <div class="gallery">
+            <div>
+                <img src="https://raw.githubusercontent.com/charan-2028/BikeHub.GITHUB.1OQ/68f3713e63ebe1dd8872f99ab4737f491ea8d56a/1.e.jpg" alt="Electric Bike 1 View 1">
+                <img src="https://raw.githubusercontent.com/charan-2028/BikeHub.GITHUB.1OQ/68f3713e63ebe1dd8872f99ab4737f491ea8d56a/2.e.jpg" alt="Electric Bike 1 View 2">
+                <img src="https://raw.githubusercontent.com/charan-2028/BikeHub.GITHUB.1OQ/68f3713e63ebe1dd8872f99ab4737f491ea8d56a/3.e.jpg" alt="Electric Bike 1 View 3">
+                <p class="bike-info">
+                    The Zero SR/F is a premium electric motorcycle combining cutting-edge technology with sleek design, offering impressive performance and sustainability.
+                </p>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2024 Bikes Showcase. All rights reserved.</p>
     </footer>
+
+    <script>
+        console.log('Welcome to Bikes Showcase!');
+    </script>
 </body>
 </html>
